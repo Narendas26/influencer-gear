@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Shared Style */
+.common-font{
+    font-family: Poppins;
+}
+
+/* Individual Style */
+
+/* Navbar Area: */
+.navbar-section{
+    /* border: 1px solid blue; */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu ul{
+    display: flex;
+    gap:30px;
+}
+
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding:5px;
+
+    transition: color 1s ease-in, background-color 1s ease-in;
+}
+
+.nav-menu ul>li:nth-of-type(-n+4)>a:hover{
+    color: white;
+    background-color: blueviolet;
+    padding:5px;
+}
+
+.nav-menu img{
+    height: 20px;
+}
+
+
+/* Responsive Area */
+/* For Mobile Display */
+@media screen and (max-width:576px){
+    .navbar-section{
+        flex-direction: column;
+    }  
+    
+    .nav-menu{
+        margin:0 auto;
+        /* border:1px solid blue; */
+    }
+
+    .nav-menu ul{
+        flex-direction: column;
+    }
+
+    .nav-menu ul li{
+        text-align: center;
+        /* border:1px solid red; */
+        margin-left: -40px;
+    }
+}
