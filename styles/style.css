@@ -8,6 +8,10 @@ body{
     font-family: Poppins;
 }
 
+.footer-font{
+    font-family: Manrope;
+}
+
 .common-btn{
     background-color: #E02C6D;
     color:white;
@@ -230,7 +234,21 @@ body{
 .footer{
     background-color: #0A0826;
     max-width: 100%;
-    max-height: 200px;  
+    max-height: 300px;  
+}
+
+.footer-details{
+    max-width: 300px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding:50px;
+    /* border: 1px solid whitesmoke; */
+}
+
+#footer-title{
+    font-weight: 700;
+    font-size:1.5rem;
 }
 
 
