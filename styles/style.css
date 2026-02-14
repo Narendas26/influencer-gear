@@ -31,6 +31,21 @@ body{
   gap: 8px;
 }
 
+.card-title-font{
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.card-prize-font-family{
+    font-family: inter;
+    font-size:1.5rem;
+    font-weight: 400;
+}
+
+.rating-setup{
+    display: flex;
+    align-items: center;
+}
 
 /* Individual Style */
 
@@ -131,6 +146,47 @@ body{
     margin-top: 80px;
 }
 
+/* Popular Collection */
+.popular-collection{
+    max-width: 1100px;
+    /* border: 2px solid pink; */
+    margin: 106px auto;
+}
+
+#popular-collection-title{
+    font-weight: 600;
+    font-size:1.70rem;
+    text-align: center;
+}
+
+.all-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid gray; */
+    gap: 20px;
+}
+
+.item-card{
+    padding:10px;
+    /* max-width: 329px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.product{
+    width: 100%;
+}
+
+.see-more-link{
+    /* background-color: aqua; */
+    margin-top: 20px;
+} 
+
+.see-more-link a{
+    color: #E02C6D; 
+    margin-left: 90%;
+    text-decoration: none;
+}
+
 
 /* Responsive Area */
 /* For Mobile Display */
@@ -183,6 +239,18 @@ body{
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
         place-items: center;
+    }
+
+    .all-card{
+        grid-template-columns: repeat(1, 1fr);
+        /* align-items: center;
+        justify-content: center; */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .see-more-link a{
+        margin-left: 70%;
     }
 
 }
